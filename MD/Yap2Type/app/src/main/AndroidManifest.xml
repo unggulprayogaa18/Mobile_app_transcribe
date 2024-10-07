@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yap2Type"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.Home.RecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Home.VoiceToTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.About.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.About.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Home.SummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Home.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Home.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
